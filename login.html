@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F. Fontana</title>
+  <meta name="description" content="este es mi primer portfolio" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+          <a href="https://argentinaprograma.inti.gob.ar/"><img src="img/APLogo-20-20.png" alt="argprog" /></a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">experiencia</a></li>
+            <li><a href="#">educacion</a></li>
+            <li><a href="#">skills</a></li>
+            <li><a href="#">projectos</a></li>
+            <li><a href="#">contacto</a></li>
+          </ul>
+        </nav>
+        <!-- <a class="btn-login" href="login.html"><button><b>Login</b></button></a> -->
+    <!-- navbar respovive -->
+        <a onclick="openNav()" class="menu" href="#"><button><b>Menu</b></button></a>
+          <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+              <a href="#">experiencia</a>
+              <a href="#">educacion</a>
+              <a href="#">skills</a>
+              <a href="#">projectos</a>
+              <a href="#">contacto</a>
+              <!-- <a href="login.html">login</a> -->
+            </div>
+          </div>
+      </header>
+</body>
+
+</html>

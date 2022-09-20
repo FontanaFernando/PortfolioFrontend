@@ -1,58 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="este es mi primer portfolio">
-        <title>Fernando N. Fontana</title>
-    </head>
-    <body bgcolor="#1e2327" text="E6E6E6">
-        <header>
-            <nav>
-                <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1659143423/APLogo-20-20.png" alt="argprog">
-                <button>login</button>
-            </nav>
-            <img src="banner" alt="">
-            <img src="profile" alt="">
-            <h3>profile-name</h3>
-            <article>
-                <h4>acerca de...</h4>
-                <p>acerca de info</p>
-            </article>
-        </header>
-        <section>
-            <h3>experiencia</h3>
-            <article>
-                <img src="" alt="">
-                <div>
-                    <h4>puesto</h4>
-                    <p>experiencia laboral</p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <h3>educacion</h3>
-            <article>
-                <img src="" alt="">
-                <div>
-                    <h4>formacion</h4>
-                    <p>informacion academica</p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <h3>Hard & Soft Skills</h3>
-        </section>
-        <section>
-            <h3>Proyectos</h3>
-            <article>
-                <h4>nombre del proyecto</h4>
-                <p>info del proyecto</p>
-                <img src="" alt="">
-            </article>
-        </section>
-        <footer>
 
-        </footer>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F. Fontana</title>
+  <meta name="description" content="este es mi primer portfolio" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="https://argentinaprograma.inti.gob.ar/"><img src="img/APLogo-20-20.png" alt="argprog" /></a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">experiencia</a></li>
+        <li><a href="#">educacion</a></li>
+        <li><a href="#">skills</a></li>
+        <li><a href="#">projectos</a></li>
+        <li><a href="#">contacto</a></li>
+      </ul>
+    </nav>
+    <a class="btn-login" href="login.html"><button><b>Login</b></button></a>
+<!-- navbar respovive -->
+    <a onclick="openNav()" class="menu" href="#"><button><b>Menu</b></button></a>
+      <div class="overlay" id="mobile-menu">
+        <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="overlay-content">
+          <a href="#">experiencia</a>
+          <a href="#">educacion</a>
+          <a href="#">skills</a>
+          <a href="#">projectos</a>
+          <a href="#">contacto</a>
+          <a href="login.html">login</a>
+        </div>
+      </div>
+  </header>
+  <section class="section-profile">
+    <img class="banner" src="banner" alt="" />
+    <img class="profile" src="profile" alt="" />
+    <h3>Profile-name</h3>
+    <article>
+      <h4>acerca de...</h4>
+      <p>
+        acerca de info Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Sunt ad in error distinctio suscipit nemo enim aut, earum ut
+        praesentium saepe laudantium qui numquam, corrupti repellat amet,
+        harum quos quia.
+      </p>
+    </article>
+    <h3>Experiencia</h3>
+    <article>
+      <img class="work-logo" src="logo" alt="" />
+      <div>
+        <h4>Puesto</h4>
+        <p>
+          experiencia laboral Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Sunt ad in error distinctio suscipit nemo enimyect
+          aut, earum ut praesentium saepe laudantium qui numquam, corrupti
+          repellat amet, harum quo
+        </p>
+      </div>
+    </article>
+  </section>
+  <section>
+    <h3>Educacion</h3>
+    <article>
+      <img class="school-logo" src="" alt="" />
+      <div>
+        <h4>Formacion</h4>
+        <p>informacion academica</p>
+      </div>
+    </article>
+  </section>
+  <section>
+    <h3>Hard & Soft Skills</h3>
+  </section>
+  <section>
+    <h3>Proyectos</h3>
+    <article>
+      <h4>Nombre del Proyecto</h4>
+      <p>info del proyecto</p>
+      <img class="proyect-logo" src="" alt="" />
+    </article>
+  </section>
+  <footer></footer>
+  <script type="text/javascript" src="nav.js"></script>
+</body>
+
 </html>

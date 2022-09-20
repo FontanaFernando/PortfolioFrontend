@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #1e2327;
+  color: #e6e6e6;
+}
+.header {
+  background-color: #411d63;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 65px;
+  padding: 5px 1%;
+}
+.header .logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+.header .logo img {
+  height: 60px;
+  width: auto;
+  transition: all 0.3s;
+}
+.header .logo img:hover {
+  transform: scale(1.2);
+}
+.header .nav-links {
+  list-style: none;
+}
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.header .nav-links li:hover,
+.overlay a:hover {
+  transform: scale(1.1);
+}
+.header .nav-links a {
+  color: #e6e6e6;
+}
+.header .nav-links li a:hover {
+  color: #ab86ce;
+}
+.menu {
+  display: none;
+}
+.header .btn-login button, 
+.header .menu button {
+  background: #ab86ce;
+  color: #1e2327;
+  width: 60px;
+  height: 30px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.header .btn-login button:hover,
+.header .menu button:hover {
+  background-color: #e6e6e6;
+  color: #1e2327;
+  border-style: none;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 800px) {
+  .nav-links,
+  .btn-login {
+    display: none;
+  }
+  .menu {
+    display: inherit;
+  }
+}
+/*Nav.js*/
+.header a {
+  text-decoration: none;
+}
+.header .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: #411d63b2;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+.header .overlay .overlay-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header .overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color: #e6e6e6;
+}
+.header .overlay a:hover,
+.header .overlay a:focus {
+  color: #ab86ce;
+}
+.header .overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+@media screen and (max-height: 450px) {
+  .header .overlay a {
+    font-size: 20px;
+  }
+  .header .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
